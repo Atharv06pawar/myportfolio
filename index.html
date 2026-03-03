@@ -1,211 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atharv Pawar | Frontend-Focused Full Stack Developer</title>
 
-    <title>Atharv Pawar | Developer Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
 
-    <!-- SEO -->
-    <meta name="description" content="Atharv Pawar - Software Developer Portfolio. Projects in Web Development, Android, and Full Stack Applications.">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+<!-- Font Awesome Icons -->
+<link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6x9Y9Wl+PBkO5RAwOB1p5MNDoAuCEr0aKBslZx2E2r/7Lr1leChX2NDVY5g==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" 
+/>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
+<nav>
+  <div class="logo">Atharv Pawar</div>
+
+  <div class="nav-links" id="navLinks">
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+    <a href="assets/ATHARV-PAWAR-Resume.pdf" download class="resume-btn">Resume</a>
+  </div>
+
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
 
-<!-- HERO -->
 <section id="home" class="hero">
-    <h1>Atharv Pawar</h1>
-    <p>Engineering Student • Full-Stack Developer • GATE Aspirant</p>
 
-    <div class="typewriter">
-        <p>Building real projects and gaining experience.</p>
+  <div class="hero-text reveal">
+
+    <div class="intro-line">
+      <span></span>
+      <p>Hello, I'm</p>
     </div>
 
-    <a href="#projects" class="cta-button">View My Projects</a>
-</section>
+    <h1>
+      Atharv <span>Pawar</span>
+    </h1>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-    <div class="about-content">
+    <h2>Frontend-Focused Full Stack Developer</h2>
 
-        <div class="profile-wrapper">
-            <div class="profile-border">
-                <img src="profile.jpg" alt="Portrait of Atharv Pawar" class="profile-image">
-            </div>
-        </div>
+    <p class="hero-description">
+      I build responsive, scalable and production-ready web applications
+      using React, Next.js and structured frontend systems
+      built for real-world usage.
+    </p>
 
-        <div class="about-text">
-            <p>
-                I’m an engineering student at GCOE Chandrapur, passionate about software development and building real-world applications.
-                I work with C++, React, PHP, and modern web technologies, often building complete systems independently.
-                I’m preparing for GATE and aiming to become an SDE who delivers clean, efficient, and impactful solutions.
-            </p>
-        </div>
-
+    <div class="buttons">
+      <a href="#projects" class="primary-btn">View Projects</a>
+      <a href="assets/ATHARV-PAWAR-Resume.pdf" download class="outline-btn">Download Resume</a>
     </div>
-</section>
 
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
-
-    <div class="project-cards">
-
-        <div class="project-card">
-            <h3>
-                <a href="https://grindhaus.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    GrindHaus
-                </a>
-            </h3>
-            <p>Fitness app UI with AI coach concept, progress tracking, and exercise library.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>
-                <a href="https://grow-my-therapy-clone-dtj7.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    Grow My Therapy Assignment
-                </a>
-            </h3>
-            <p>Company assignment by cloning provided template with responsive UI.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>
-                <a href="https://github.com/Atharv06pawar/ExpenJar" target="_blank" rel="noopener noreferrer">
-                    ExpenseJar (Android)
-                </a>
-            </h3>
-            <p>Java + Room DB finance tracker with profiles and category tracking.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>
-                <a href="https://atharv06pawar.github.io/weather-dashboard/" target="_blank" rel="noopener noreferrer">
-                    Weather Dashboard
-                </a>
-            </h3>
-            <p>Tailwind + Chart.js + Weather API 5-day forecast dashboard.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>
-                <a href="https://atharv06pawar.github.io/Location_tracker/" target="_blank" rel="noopener noreferrer">
-                    Location Tracker UI
-                </a>
-            </h3>
-            <p>Frontend ethical tracking interface. Firebase backend planned.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>
-                <a href="https://atharv06pawar.github.io/ExpenseTracker/" target="_blank" rel="noopener noreferrer">
-                    Expense Tracker Web
-                </a>
-            </h3>
-            <p>CRUD operations + CSV export + analytics charts.</p>
-        </div>
-
+    <div class="socials">
+      <a href="https://github.com/Atharv06pawar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:pawaratharv06@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
-</section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="certifications">
-    <h2>Certifications</h2>
+  </div>
 
-    <div class="certifications-grid">
-        <div class="cert-card">
-            <a href="https://www.hackerrank.com/certificates/f257a7844f7b" target="_blank" rel="noopener noreferrer">
-                Java (Basic) – HackerRank
-            </a>
-        </div>
+  <div class="hero-img reveal-scale">
+    <div class="circle"></div>
+    <img src="assets/profile.png" alt="Atharv Pawar">
 
-        <div class="cert-card">
-            <a href="https://www.hackerrank.com/certificates/a6bbe57e53b3" target="_blank" rel="noopener noreferrer">
-                Python (Basic) – HackerRank
-            </a>
-        </div>
+    <div class="ribbon">
+  <div class="ribbon-track">
 
-        <div class="cert-card">
-            <a href="https://codeunnati.edunetfoundation.com/verify-certificate/CU24_8268" target="_blank" rel="noopener noreferrer">
-                Advanced Course – Edunet Foundation
-            </a>
-        </div>
+    <!-- Set 1 -->
+    <div class="ribbon-content reveal-scale">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
     </div>
-</section>
 
-<!-- SKILLS -->
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-        <span>C++</span>
-        <span>Java</span>
-        <span>Python</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>React</span>
-        <span>Node.js</span>
-        <span>PHP</span>
-        <span>MySQL</span>
-        <span>Firebase</span>
-        <span>Git</span>
-        <span>TailwindCSS</span>
-        <span>Chart.js</span>
-        <span>REST APIs</span>
-        <span>Responsive Design</span>
-        <span>DOM Manipulation</span>
-        <span>Local Storage</span>
-        <span>GitHub Pages</span>
+    <!-- Duplicate Set for Infinite Loop -->
+    <div class="ribbon-content">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
     </div>
+
+  </div>
+</div>
+  </div>
+
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact</h2>
-
-    <div class="contact-buttons">
-        <a href="mailto:pawaratharv06@gmail.com">Email</a>
-
-        <a href="https://linkedin.com/in/-atharvpawar" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-        </a>
-
-        <a href="https://github.com/Atharv06pawar" target="_blank" rel="noopener noreferrer">
-            GitHub
-        </a>
+<section id="about" class="about-section reveal">
+  
+  <div class="about-container">
+    
+    <div class="about-left reveal-scale">
+      <h2>About Me</h2>
     </div>
+
+    <div class="about-right reveal-scale">
+      <p>
+        I’m a Computer Science undergraduate focused on building clean,
+        scalable frontend systems and production-ready web applications.
+        I enjoy structuring UI architectures that are maintainable,
+        performant, and ready for growth.
+      </p>
+
+      <p>
+        My approach is product-oriented — I focus not just on writing code,
+        but on building usable, responsive and structured systems that
+        solve real-world problems.
+      </p>
+
+      <div class="about-highlights">
+        <div>✔ Frontend-Focused Full Stack</div>
+        <div>✔ Startup Ownership Mindset</div>
+        <div>✔ Remote Work Ready</div>
+      </div>
+    </div>
+
+  </div>
+
 </section>
 
-<!-- FOOTER -->
+<section id="projects" class="section reveal">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- Therapist -->
+    <div class="project-card">
+      <h3>Therapist Website</h3>
+      <p>Production-level responsive implementation using Next.js and Tailwind.</p>
+      <div class="project-links">
+        <a href="https://grow-my-therapy-clone-dtj7.vercel.app/" target="_blank">Live</a>
+      </div>
+    </div>
+
+    <!-- GrindHaus -->
+    <div class="project-card">
+      <h3>GrindHaus</h3>
+      <p>Scalable fitness UI platform with reusable architecture.</p>
+      <div class="project-links">
+        <a href="https://grindhaus.vercel.app/" target="_blank">Live</a>
+      </div>
+    </div>
+
+    <!-- Weather -->
+    <div class="project-card">
+      <h3>Live Weather Dashboard</h3>
+      <p>API integrated async weather app with 5-day forecast UI.</p>
+      <div class="project-links">
+        <a href="https://atharv06pawar.github.io/weather-dashboard/" target="_blank">Live</a>
+      </div>
+    </div>
+
+    <!-- ExpenJar -->
+    <div class="project-card">
+      <h3>ExpenJar (Android App)</h3>
+      <p>Java-based Android expense tracking app using Room Database.</p>
+      <div class="project-links">
+        <a href="https://github.com/Atharv06pawar/ExpenJar" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 40px;">
+    <a href="https://github.com/Atharv06pawar" target="_blank" class="outline-btn">
+      View All Projects on GitHub →
+    </a>
+  </div>
+
+</section>
+<section id="contact" class="contact-section reveal">
+
+  <h2>Connect With Me</h2>
+
+  <p class="contact-subtext">
+    Open to remote internships, freelance projects and meaningful collaborations.
+  </p>
+
+  <div class="social-icons reveal-scale">
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/-atharvpawar" target="_blank" class="icon linkedin">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/Atharv06pawar" target="_blank" class="github icon">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/atharv.0808x/" target="_blank" class="instagram icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+  </a>
+
+  <!-- Twitter / X -->
+  <a href="https://x.com/Atharv__Pawar__" target="_blank" class="twitter icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X">
+  </a>
+
+  <!-- LeetCode -->
+  <a href="https://leetcode.com/u/E9UsSExKDg/" target="_blank" class="leetcode icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode">
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:pawaratharv06@gmail.com" class="email icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+  </a>
+
+  <!-- Resume -->
+  <a href="assets/ATHARV-PAWAR-Resume.pdf" download class="resume icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Resume">
+  </a>
+
+</div>
+
+</section>
 <footer>
-    <p>Made with ☕ + code by Atharv Pawar</p>
-
-    <div class="social-icons">
-        <a href="https://linkedin.com/in/-atharvpawar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/Atharv06pawar" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
+  <p>© 2026 Atharv Pawar | Built with basic HTML, CSS & JS</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
