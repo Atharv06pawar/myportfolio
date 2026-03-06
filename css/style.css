@@ -36,6 +36,11 @@ body {
 
 section {
   overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  padding-inline-start: 25px;
+  padding-right: 25px;
 }
 
 /* =========================
@@ -414,7 +419,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s ease;
   text-decoration: none;
 }
 
@@ -520,3 +524,7 @@ footer {
     display: flex;
   }
 }
+.viewbutton{
+  padding: 10px 10px 10px 10px;
+  margin-top: 40px;
+ }
