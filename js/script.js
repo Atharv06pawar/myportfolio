@@ -1,66 +1,77 @@
-// ============================
-// NAVBAR TOGGLE
-// ============================
-
 const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+const siteNav = document.getElementById("siteNav");
+const navAnchors = document.querySelectorAll('.nav-panel a[href^="#"]');
+const revealElements = document.querySelectorAll("[data-reveal]");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+function setMenuState(isOpen) {
+  if (!menuToggle || !siteNav) {
+    return;
+  }
 
-// ============================
-// SMOOTH INERTIA SCROLL SYSTEM
-// ============================
-
-const wrapper = document.getElementById("smooth-wrapper");
-const content = document.getElementById("smooth-content");
-
-let current = 0;
-let target = 0;
-let ease = 0.08;
-
-function setBodyHeight() {
-  document.body.style.height = content.getBoundingClientRect().height + "px";
+  menuToggle.classList.toggle("is-active", isOpen);
+  siteNav.classList.toggle("is-open", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
 }
 
-function smoothScroll() {
-  target = window.scrollY;
-  current += (target - current) * ease;
-
-  content.style.transform = `translateY(${-current}px)`;
-
-  requestAnimationFrame(smoothScroll);
-}
-
-setBodyHeight();
-smoothScroll();
-window.addEventListener("resize", setBodyHeight);
-
-// ============================
-// SCROLL REVEAL (ADJUSTED)
-// ============================
-
-const reveals = document.querySelectorAll(".reveal, .reveal-scale");
-const projectCards = document.querySelectorAll(".project-card");
-
-function revealOnScroll() {
-  reveals.forEach((element) => {
-    const rect = element.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      element.classList.add("active");
-    }
+if (menuToggle && siteNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = !siteNav.classList.contains("is-open");
+    setMenuState(isOpen);
   });
 
-  projectCards.forEach((card, index) => {
-    const rect = card.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      setTimeout(() => {
-        card.classList.add("active");
-      }, index * 150);
+  navAnchors.forEach((anchor) => {
+    anchor.addEventListener("click", () => setMenuState(false));
+  });
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+
+    if (!(target instanceof Node)) {
+      return;
+    }
+
+    if (!siteNav.contains(target) && !menuToggle.contains(target)) {
+      setMenuState(false);
     }
   });
 }
 
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
+function revealImmediately() {
+  revealElements.forEach((element) => {
+    element.classList.add("is-visible");
+  });
+}
+
+function handleReducedMotionChange(event) {
+  if (event.matches) {
+    revealImmediately();
+  }
+}
+
+if (prefersReducedMotion.matches) {
+  revealImmediately();
+} else {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.16,
+      rootMargin: "0px 0px -48px 0px"
+    }
+  );
+
+  revealElements.forEach((element) => observer.observe(element));
+}
+
+if (typeof prefersReducedMotion.addEventListener === "function") {
+  prefersReducedMotion.addEventListener("change", handleReducedMotionChange);
+} else if (typeof prefersReducedMotion.addListener === "function") {
+  prefersReducedMotion.addListener(handleReducedMotionChange);
+}
