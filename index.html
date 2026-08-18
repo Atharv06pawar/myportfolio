@@ -1,287 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atharv Pawar | Frontend-Focused Full Stack Developer</title>
-<meta name="description" content="Atharv Pawar - Frontend-focused Full Stack Developer specializing in React, Next.js, JavaScript and scalable UI systems. View projects, portfolio and contact details.">
-<meta name="keywords" content="Atharv Pawar, Atharv Pawar developer, Frontend Developer India, React Developer, Next.js Developer, Full Stack Developer Portfolio">
-<meta name="author" content="Atharv Pawar">
-<meta property="og:title" content="Atharv Pawar | Developer Portfolio">
-<meta property="og:description" content="Frontend-focused Full Stack Developer building scalable and production-ready web applications.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://atharvpawar.work.gd/">
-<meta name="theme-color" content="#0b1116">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atharv Pawar | Software &amp; AI Engineer</title>
+  <meta name="description" content="Atharv Pawar — Software &amp; AI Engineer. End-to-end technical generalist building software, AI systems, backend architectures, RAG pipelines, and automation.">
+  <meta name="keywords" content="Atharv Pawar, Software Engineer, AI Engineer, Machine Learning, RAG, PyTorch, Backend Engineer, Full Stack Developer, AegisSwarm, REDAESTH">
+  <meta name="author" content="Atharv Pawar">
+  
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:title" content="Atharv Pawar | Software &amp; AI Engineer">
+  <meta property="og:description" content="I build and ship software end-to-end — from architecture and backend systems to AI/ML integration, automation, testing and deployment.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atharvpawar.work.gd/">
+  <meta property="og:image" content="https://atharvpawar.work.gd/assets/profile.png">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Atharv Pawar | Software &amp; AI Engineer">
+  <meta name="twitter:description" content="I build and ship software end-to-end — from architecture and backend systems to AI/ML integration, automation, testing and deployment.">
+  <meta name="twitter:image" content="https://atharvpawar.work.gd/assets/profile.png">
+  
+  <meta name="theme-color" content="#090e14">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Atharv Pawar",
+    "jobTitle": "Software & AI Engineer",
+    "url": "https://atharvpawar.work.gd/",
+    "sameAs": [
+      "https://github.com/Atharv06pawar",
+      "https://www.linkedin.com/in/-atharvpawar",
+      "https://x.com/Atharv__Pawar__",
+      "https://leetcode.com/u/E9UsSExKDg/"
+    ],
+    "knowsAbout": [
+      "Software Engineering",
+      "Artificial Intelligence",
+      "Retrieval-Augmented Generation (RAG)",
+      "PyTorch",
+      "Backend Architecture",
+      "Node.js",
+      "Express",
+      "React",
+      "Next.js",
+      "C++",
+      "Python",
+      "WebSockets",
+      "FAISS",
+      "AI Security"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "REDAESTH Pvt. Ltd."
+    }
+  }
+  </script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container">
-    <nav class="navbar" aria-label="Primary">
-      <a class="brand" href="#home">Atharv Pawar</a>
 
-      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <!-- Site Header & Sticky Navigation -->
+  <header class="site-header" id="top">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary Navigation">
+        <a class="brand" href="#top" aria-label="Atharv Pawar Home">
+          <span class="brand-name">Atharv Pawar</span>
+          <span class="brand-badge">Software &amp; AI</span>
+        </a>
 
-      <div class="nav-panel" id="siteNav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="assets/ATHARV-PAWAR-Resume.pdf" download="ATHARV-PAWAR-Resume.pdf" class="nav-resume">Resume</a>
-      </div>
-    </nav>
-  </div>
-</header>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
 
-<main>
-  <section id="home" class="section hero">
-    <div class="container hero-grid">
-      <div class="hero-copy" data-reveal="up">
-        <p class="hero-intro">Hello, I'm</p>
-        <h1>Atharv <span>Pawar</span></h1>
-        <p class="hero-role">Frontend-Focused Full Stack Developer</p>
-        <p class="hero-description">
-          I build responsive, scalable and production-ready web applications
-          using React, Next.js and structured frontend systems
-          built for real-world usage.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="button button-primary">View Projects</a>
-          <a href="assets/ATHARV-PAWAR-Resume.pdf" download="ATHARV-PAWAR-Resume.pdf" class="button button-secondary">Download Resume</a>
+        <div class="nav-panel" id="siteNav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#ownership" class="nav-link">Ownership</a>
+          <a href="#case-studies" class="nav-link">Case Studies</a>
+          <a href="#capabilities" class="nav-link">Capabilities</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#workflow" class="nav-link">Workflow</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <div class="nav-actions">
+            <a href="assets/ATHARV-PAWAR-Resume.pdf" download="ATHARV-PAWAR-Resume.pdf" class="button button-nav-resume" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Resume PDF</span>
+            </a>
+          </div>
         </div>
+      </nav>
+    </div>
+  </header>
 
-        <div class="hero-links" aria-label="Quick links">
-          <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/-atharvpawar" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="mailto:pawaratharv06@gmail.com">Email</a>
-        </div>
-      </div>
-
-      <div class="hero-visual" data-reveal="scale">
-        <div class="profile-card">
-          <div class="profile-glow"></div>
-          <div class="profile-frame">
-            <img src="assets/profile.png" alt="Atharv Pawar portrait" class="profile-image">
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal="up">
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Engineering &amp; Product Roles</span>
           </div>
 
-          <div class="stack-panel">
-            <p>Core tools and technologies</p>
-            <div class="stack-grid" aria-label="Core tools and technologies">
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></span>
-              <span class="stack-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></span>
+          <h1 class="hero-title">
+            Atharv <span class="text-gradient">Pawar</span>
+          </h1>
+          <p class="hero-role">Software &amp; AI Engineer</p>
+
+          <p class="hero-pitch">
+            I build and ship software end-to-end &mdash; from architecture and backend systems to AI/ML integration, automation, testing and deployment.
+          </p>
+          
+          <p class="hero-subpitch">
+            Technical generalist with hands-on experience across AI/ML, full-stack development, backend systems, APIs, automation, databases, security and deployment. I specialize in turning ambiguous technical problems into working products.
+          </p>
+
+          <!-- Core Capability Tags -->
+          <div class="hero-chips" aria-label="Core Engineering Capabilities">
+            <span class="chip">AI / ML Systems</span>
+            <span class="chip">Backend &amp; APIs</span>
+            <span class="chip">Full-Stack Architecture</span>
+            <span class="chip">Automation &amp; Pipelines</span>
+            <span class="chip">Real-Time Streaming</span>
+            <span class="chip">Security &amp; Red Teaming</span>
+            <span class="chip">Rapid MVP Development</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#case-studies" class="button button-primary">
+              <span>View Technical Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer" class="button button-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="assets/ATHARV-PAWAR-Resume.pdf" download="ATHARV-PAWAR-Resume.pdf" class="button button-secondary" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span>Resume</span>
+            </a>
+            <a href="#contact" class="button button-tertiary">Get in Touch</a>
+          </div>
+
+          <div class="hero-quick-links" aria-label="Social and professional links">
+            <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer">github.com/Atharv06pawar</a>
+            <span class="link-divider">&bull;</span>
+            <a href="https://www.linkedin.com/in/-atharvpawar" target="_blank" rel="noreferrer">linkedin.com/in/-atharvpawar</a>
+            <span class="link-divider">&bull;</span>
+            <a href="mailto:pawaratharv06@gmail.com">pawaratharv06@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal="scale">
+          <div class="profile-card">
+            <div class="profile-glow"></div>
+            
+            <div class="profile-frame">
+              <img src="assets/profile.png" alt="Atharv Pawar — Software &amp; AI Engineer" class="profile-image">
+              <div class="profile-tag-overlay">
+                <span class="code-font">builder_mode: active</span>
+              </div>
+            </div>
+
+            <!-- Verified Technical Stack Matrix -->
+            <div class="stack-panel">
+              <div class="stack-panel-header">
+                <span class="code-font stack-label">verified_stack</span>
+                <span class="stack-sub">Hands-on experience</span>
+              </div>
+              <div class="stack-grid" aria-label="Verified Tools and Technologies">
+                <div class="tech-chip" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="tech-chip" title="PyTorch"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span>PyTorch</span></div>
+                <div class="tech-chip" title="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+                <div class="tech-chip" title="Express"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="invert-icon"><span>Express</span></div>
+                <div class="tech-chip" title="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+                <div class="tech-chip" title="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" class="invert-icon"><span>Next.js</span></div>
+                <div class="tech-chip" title="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++17</span></div>
+                <div class="tech-chip" title="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+                <div class="tech-chip" title="MongoDB"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+                <div class="tech-chip" title="Docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></div>
+              </div>
+            </div>
+
+            <!-- Execution Pipeline Node Display -->
+            <div class="flow-mini-widget">
+              <div class="flow-step-mini"><span>01</span> Architecture</div>
+              <div class="flow-arrow-mini">&rarr;</div>
+              <div class="flow-step-mini"><span>02</span> Backend/AI</div>
+              <div class="flow-arrow-mini">&rarr;</div>
+              <div class="flow-step-mini"><span>03</span> Test &amp; Deploy</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-heading" data-reveal="up">
-        <p class="section-kicker">About</p>
-        <h2>Structured thinking, scalable interfaces, and a product-oriented approach.</h2>
-      </div>
-
-      <div class="about-grid">
-        <article class="info-card" data-reveal="up">
-          <p class="card-label">Who I Am</p>
-          <p>
-            I'm a Computer Science undergraduate focused on building clean,
-            scalable frontend systems and production-ready web applications.
+    <!-- Core Philosophy Section -->
+    <section class="section section-philosophy" id="philosophy">
+      <div class="container">
+        <div class="philosophy-box" data-reveal="up">
+          <div class="philosophy-kicker">Core Engineering Mindset</div>
+          <h2 class="philosophy-heading">
+            &ldquo;Give me a problem. I'll figure out the stack.&rdquo;
+          </h2>
+          <p class="philosophy-copy">
+            I don't limit myself to a single framework or layer of the stack. I start with the problem, understand the constraints, determine the technical approach, build the system, integrate the required services, test it, deploy it and iterate.
           </p>
-        </article>
-
-        <article class="info-card" data-reveal="up">
-          <p class="card-label">What I Focus On</p>
-          <p>
-            I enjoy structuring UI architectures that are maintainable,
-            performant, and ready for growth.
-          </p>
-          <p>
-            My approach is product-oriented - I focus not just on writing code,
-            but on building usable, responsive and structured systems that
-            solve real-world problems.
-          </p>
-        </article>
-
-        <article class="info-card strengths-card" data-reveal="up">
-          <p class="card-label">Strengths</p>
-          <ul class="strength-list">
-            <li>Frontend-Focused Full Stack</li>
-            <li>Startup Ownership Mindset</li>
-            <li>Remote Work Ready</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section section-projects">
-    <div class="container">
-      <div class="section-heading section-heading-split" data-reveal="up">
-        <div>
-          <p class="section-kicker">Projects</p>
-          <h2>Projects built for clarity, usability, and real-world application.</h2>
         </div>
-        <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer" class="section-link">View All Projects on GitHub -></a>
       </div>
+    </section>
 
-      <div class="project-grid">
-        <article class="project-card" data-reveal="up">
-          <div class="project-header">
-            <span class="project-index">01</span>
-            <h3>Therapist Website</h3>
-          </div>
-          <p>Production-level responsive implementation using Next.js and Tailwind.</p>
-          <ul class="project-tags">
-            <li>Next.js</li>
-            <li>Tailwind CSS</li>
-            <li>Responsive UI</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://grow-my-therapy-clone-dtj7.vercel.app/" target="_blank" rel="noreferrer" class="button button-secondary">Live Site</a>
-          </div>
-        </article>
-
-        <article class="project-card" data-reveal="up">
-          <div class="project-header">
-            <span class="project-index">02</span>
-            <h3>GrindHaus</h3>
-          </div>
-          <p>Scalable fitness UI platform with reusable architecture.</p>
-          <ul class="project-tags">
-            <li>Scalable UI</li>
-            <li>Reusable Architecture</li>
-            <li>Fitness Platform</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://grindhaus.vercel.app/" target="_blank" rel="noreferrer" class="button button-secondary">Live Site</a>
-          </div>
-        </article>
-
-        <article class="project-card" data-reveal="up">
-          <div class="project-header">
-            <span class="project-index">03</span>
-            <h3>Live Weather Dashboard</h3>
-          </div>
-          <p>API integrated async weather app with 5-day forecast UI.</p>
-          <ul class="project-tags">
-            <li>API Integration</li>
-            <li>Async UI</li>
-            <li>5-Day Forecast</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://atharv06pawar.github.io/weather-dashboard/" target="_blank" rel="noreferrer" class="button button-secondary">Live Site</a>
-          </div>
-        </article>
-
-        <article class="project-card" data-reveal="up">
-          <div class="project-header">
-            <span class="project-index">04</span>
-            <h3>ExpenJar (Android App)</h3>
-          </div>
-          <p>Java-based Android expense tracking app using Room Database.</p>
-          <ul class="project-tags">
-            <li>Java</li>
-            <li>Android</li>
-            <li>Room Database</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://github.com/Atharv06pawar/ExpenJar" target="_blank" rel="noreferrer" class="button button-secondary">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="contact-shell">
+    <!-- What I Can Take Ownership Of Section -->
+    <section class="section" id="ownership">
+      <div class="container">
         <div class="section-heading" data-reveal="up">
-          <p class="section-kicker">Contact</p>
-          <h2>Connect With Me</h2>
-          <p class="section-copy">
-            Open to remote internships, freelance projects and meaningful collaborations.
+          <p class="section-kicker">Engineering Impact</p>
+          <h2>What I Can Take Ownership Of</h2>
+          <p class="section-lead">
+            Concrete problems I can take from ambiguity to production, freeing engineering leads and founders to focus on higher-level strategy.
           </p>
         </div>
 
-        <div class="contact-grid" data-reveal="up">
-          <a href="https://www.linkedin.com/in/-atharvpawar" target="_blank" rel="noreferrer" class="contact-card linkedin">
-            <span class="contact-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn icon">
-            </span>
-            <span class="contact-text">LinkedIn</span>
-          </a>
+        <div class="ownership-grid">
+          <article class="ownership-card" data-reveal="up">
+            <div class="ownership-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <h3>Need an AI/LLM system integrated?</h3>
+            <p>I can design RAG pipelines, dense embeddings, vector search (FAISS), custom model inference, prompt guardrails, and model evaluation.</p>
+            <span class="ownership-tag">RAG &bull; Embeddings &bull; FAISS &bull; Evaluation</span>
+          </article>
 
-          <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer" class="contact-card github">
-            <span class="contact-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon">
-            </span>
-            <span class="contact-text">GitHub</span>
-          </a>
+          <article class="ownership-card" data-reveal="up">
+            <div class="ownership-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3>Need a backend or API?</h3>
+            <p>I can design REST APIs, backend services, JWT authentication, schema modeling, error handling, and serverless deployments.</p>
+            <span class="ownership-tag">Node.js &bull; Express &bull; REST &bull; Auth</span>
+          </article>
 
-          <a href="https://www.instagram.com/atharv.0808x/" target="_blank" rel="noreferrer" class="contact-card instagram">
-            <span class="contact-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram icon">
-            </span>
-            <span class="contact-text">Instagram</span>
-          </a>
+          <article class="ownership-card" data-reveal="up">
+            <div class="ownership-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3>Need an end-to-end application or MVP?</h3>
+            <p>I can take a concept from system requirements and architecture through frontend UI, backend logic, and production deployment.</p>
+            <span class="ownership-tag">Architecture &bull; Full Stack &bull; Rapid MVP</span>
+          </article>
 
-          <a href="https://x.com/Atharv__Pawar__" target="_blank" rel="noreferrer" class="contact-card twitter">
-            <span class="contact-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="X icon">
-            </span>
-            <span class="contact-text">X</span>
-          </a>
+          <article class="ownership-card" data-reveal="up">
+            <div class="ownership-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+            </div>
+            <h3>Need automation or data pipelines?</h3>
+            <p>I can build automated document ingestion pipelines, PDF extraction, dataset deduplication, cleaning, and batch workflows.</p>
+            <span class="ownership-tag">Pipelines &bull; Document ETL &bull; Scraping</span>
+          </article>
 
-          <a href="https://leetcode.com/u/E9UsSExKDg/" target="_blank" rel="noreferrer" class="contact-card leetcode">
-            <span class="contact-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode icon">
-            </span>
-            <span class="contact-text">LeetCode</span>
-          </a>
+          <article class="ownership-card" data-reveal="up">
+            <div class="ownership-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+            </div>
+            <h3>Need real-time streaming or voice AI?</h3>
+            <p>I can engineer bidirectional WebSocket streams with audio chunking, Voice Activity Detection (VAD), STT, and low-latency TTS.</p>
+            <span class="ownership-tag">WebSockets &bull; VAD &bull; Streaming &bull; Audio</span>
+          </article>
 
-          <a href="mailto:pawaratharv06@gmail.com" class="contact-card email">
-            <span class="contact-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email icon">
-            </span>
-            <span class="contact-text">Email</span>
-          </a>
+          <article class="ownership-card" data-reveal="up">
+            <div class="ownership-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            </div>
+            <h3>Need an internal dashboard or admin portal?</h3>
+            <p>I can build responsive interfaces, authentication layers, role-based workflows, and data visualizations for operational tools.</p>
+            <span class="ownership-tag">Admin Portals &bull; CRUD &bull; Visualizations</span>
+          </article>
 
-          <a href="assets/ATHARV-PAWAR-Resume.pdf" download="ATHARV-PAWAR-Resume.pdf" class="contact-card resume">
-            <span class="contact-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Resume icon">
-            </span>
-            <span class="contact-text">Resume</span>
-          </a>
+          <article class="ownership-card" data-reveal="up">
+            <div class="ownership-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            </div>
+            <h3>Existing codebase broken or sluggish?</h3>
+            <p>I can investigate system bottlenecks, debug asynchronous edge cases, refactor messy logic, and stabilize application behavior.</p>
+            <span class="ownership-tag">Debugging &bull; Profiling &bull; Refactoring</span>
+          </article>
+
+          <article class="ownership-card" data-reveal="up">
+            <div class="ownership-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <h3>Need architectural direction under uncertainty?</h3>
+            <p>I can research options, build rapid proof-of-concepts, evaluate trade-offs, and implement the decided approach cleanly.</p>
+            <span class="ownership-tag">System Design &bull; Trade-offs &bull; PoC</span>
+          </article>
         </div>
       </div>
+    </section>
+
+    <!-- Technical Deep-Dive Case Studies Section -->
+    <section class="section section-case-studies" id="case-studies">
+      <div class="container">
+        <div class="section-heading section-heading-split" data-reveal="up">
+          <div>
+            <p class="section-kicker">Deep-Dive Architectures</p>
+            <h2>Technical Case Studies</h2>
+            <p class="section-lead">
+              Verified architectures showing problem decomposition, systems engineering, AI/ML implementation, and technical decisions.
+            </p>
+          </div>
+          <div class="case-study-nav" role="tablist" aria-label="Case Study Selector">
+            <button class="case-tab active" role="tab" aria-selected="true" data-tab="case-aegis">01 AegisSwarm</button>
+            <button class="case-tab" role="tab" aria-selected="false" data-tab="case-grindhaus">02 GrindHaus AI</button>
+            <button class="case-tab" role="tab" aria-selected="false" data-tab="case-redaesth">03 REDAESTH</button>
+          </div>
+        </div>
+
+        <!-- Case Study 01: AegisSwarm -->
+        <article class="case-study-card active" id="case-aegis" data-reveal="up" role="tabpanel">
+          <div class="case-study-badge-row">
+            <span class="status-badge badge-research">Research &amp; Prototype</span>
+            <span class="category-badge">AI Security &bull; Autonomous Red Teaming</span>
+          </div>
+
+          <div class="case-header">
+            <h3>AegisSwarm: Autonomous Multi-Agent AI Red-Teaming &amp; Threat Simulation Framework</h3>
+            <p class="case-summary">
+              An event-driven multi-agent orchestration architecture designed to simulate, execute, and evaluate adversarial attacks against LLM agents, tools, memory stores, and RAG pipelines.
+            </p>
+          </div>
+
+          <!-- Architecture Visual Diagram -->
+          <div class="architecture-diagram" aria-label="AegisSwarm Architecture Diagram">
+            <div class="diagram-title">System Architecture &amp; Execution Pipeline</div>
+            <div class="diagram-flow">
+              <div class="flow-node">
+                <span class="node-num">01</span>
+                <strong>Threat Model</strong>
+                <span>Jailbreaks, Injections, Poisoning</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">02</span>
+                <strong>Event Bus</strong>
+                <span>Async Message Broker</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node highlight">
+                <span class="node-num">03</span>
+                <strong>HTN / ToT Planner</strong>
+                <span>Multi-Step Attack Chains</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">04</span>
+                <strong>Attacker Agents</strong>
+                <span>Tool / Memory Hijackers</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">05</span>
+                <strong>Security Benchmark</strong>
+                <span>ASB &bull; AgentDojo &bull; Reports</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-details-grid">
+            <div class="case-col">
+              <h4>The Problem</h4>
+              <p>
+                Modern LLM agents with access to tools, RAG memory, and external APIs are vulnerable to multi-turn exploits such as indirect prompt injection, long-term memory poisoning, and tool hijacking. Static one-shot benchmarks fail to capture adaptive, multi-step agent attack chains.
+              </p>
+              
+              <h4>Threat Model Coverage</h4>
+              <ul class="detail-list">
+                <li><strong>Indirect Prompt Injection:</strong> Embedding malicious payload instructions into untrusted external data and tool returns.</li>
+                <li><strong>Memory &amp; RAG Poisoning:</strong> Injecting deceptive context into persistent episodic memory or vector retrieval indexes.</li>
+                <li><strong>Tool Hijacking &amp; Data Exfiltration:</strong> Tricking autonomous agents into invoking unauthorized privileged functions.</li>
+              </ul>
+            </div>
+
+            <div class="case-col">
+              <h4>Engineering &amp; Architecture Decisions</h4>
+              <ul class="detail-list">
+                <li><strong>Microkernel Architecture:</strong> Core runtime handles async messaging and state while attack/defense modules load dynamically via plugin interfaces.</li>
+                <li><strong>Planning Search (HTN + Tree-of-Thoughts):</strong> Hierarchical Task Networks decompose high-level exploit goals into tactical sub-tasks, while ToT explores and scores candidate attack branches.</li>
+                <li><strong>Standardized Benchmark Alignment:</strong> Designed to evaluate against state-of-the-art security suites (Agent Security Bench [ASB], AgentDojo, and HarmBench).</li>
+              </ul>
+
+              <div class="case-tech-box">
+                <span class="tech-box-label">Core Technologies:</span>
+                <div class="tech-pill-row">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Multi-Agent Systems</span>
+                  <span class="tech-pill">Async Event Bus</span>
+                  <span class="tech-pill">HTN Planning</span>
+                  <span class="tech-pill">Tree-of-Thoughts</span>
+                  <span class="tech-pill">LLM Red Teaming</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 02: GrindHaus AI -->
+        <article class="case-study-card" id="case-grindhaus" role="tabpanel">
+          <div class="case-study-badge-row">
+            <span class="status-badge badge-implemented">Implemented &amp; Validated</span>
+            <span class="category-badge">Scientific RAG &bull; Custom PyTorch Transformer</span>
+          </div>
+
+          <div class="case-header">
+            <h3>GrindHaus AI: Grounded Scientific Document RAG &amp; Custom PyTorch Transformer Pipeline</h3>
+            <p class="case-summary">
+              A single-machine retrieval-augmented generation system and 20-layer custom GPT-style Transformer engineered for grounded, hallucination-resistant sports science reasoning.
+            </p>
+          </div>
+
+          <!-- Architecture Visual Diagram -->
+          <div class="architecture-diagram" aria-label="GrindHaus AI Pipeline Diagram">
+            <div class="diagram-title">End-to-End RAG &amp; Custom Transformer Architecture</div>
+            <div class="diagram-flow">
+              <div class="flow-node">
+                <span class="node-num">01</span>
+                <strong>Research Papers</strong>
+                <span>PDF Extraction &amp; Cleaning</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">02</span>
+                <strong>Chunking &amp; Embeddings</strong>
+                <span>all-MiniLM-L6-v2 Dense Vectors</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node highlight">
+                <span class="node-num">03</span>
+                <strong>Native C++ FAISS</strong>
+                <span>Vector Similarity Search</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">04</span>
+                <strong>Intent Router</strong>
+                <span>Expert vs. Companion</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">05</span>
+                <strong>20-Layer Transformer</strong>
+                <span>RoPE &bull; SwiGLU &bull; KV Cache</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-details-grid">
+            <div class="case-col">
+              <h4>The Problem</h4>
+              <p>
+                General-purpose LLMs frequently generate ungrounded or contradictory fitness and nutritional advice. The goal was to build a system providing strictly grounded reasoning backed by peer-reviewed sports science literature with low-latency local execution.
+              </p>
+              
+              <h4>Data &amp; RAG Ingestion Pipeline</h4>
+              <ul class="detail-list">
+                <li><strong>Automated Document Pipeline:</strong> Implemented drag-and-drop PDF extraction, sliding-window chunking, and dense embedding generation using <code>all-MiniLM-L6-v2</code>.</li>
+                <li><strong>C++ FAISS Vector Search:</strong> Handled high-throughput nearest-neighbor similarity search natively via FAISS to minimize query latency on Windows.</li>
+                <li><strong>Curated Instruction Dataset:</strong> Built and deduplicated an 800-sample domain dataset (400 Expert Mode + 400 Companion Mode) with zero repeated assistant responses.</li>
+              </ul>
+            </div>
+
+            <div class="case-col">
+              <h4>Custom PyTorch Transformer Architecture</h4>
+              <ul class="detail-list">
+                <li><strong>Model Specifications:</strong> <code>hidden_size=1536</code>, <code>num_layers=20</code>, <code>num_heads=12</code>, <code>intermediate_size=4096</code>, <code>vocab_size=32000</code>, <code>max_seq_len=2048</code>.</li>
+                <li><strong>Modern Architectural Primitives:</strong> Rotary Positional Embeddings (RoPE), SwiGLU non-linear activations, RMSNorm, and KV-cache inference optimization.</li>
+                <li><strong>Intent-Based Routing:</strong> Dynamic inference router dispatching scientific queries to Expert mode and conversational queries to Companion mode.</li>
+              </ul>
+
+              <div class="case-tech-box">
+                <span class="tech-box-label">Core Technologies:</span>
+                <div class="tech-pill-row">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">PyTorch (bf16)</span>
+                  <span class="tech-pill">FAISS (C++)</span>
+                  <span class="tech-pill">SentenceTransformers</span>
+                  <span class="tech-pill">Custom Transformer</span>
+                  <span class="tech-pill">RAG</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 03: REDAESTH -->
+        <article class="case-study-card" id="case-redaesth" role="tabpanel">
+          <div class="case-study-badge-row">
+            <span class="status-badge badge-production">Production Monorepo</span>
+            <span class="category-badge">Founder &bull; Systems &amp; AI Product Engineering</span>
+          </div>
+
+          <div class="case-header">
+            <h3>REDAESTH: Full-Stack Monorepo Platform with Local C++ Companion Engine</h3>
+            <p class="case-summary">
+              A production-ready monorepo combining a responsive React client, modular Node.js/Express REST API (<code>/api/v1</code>), and a standalone C++ coaching engine with persistent local memory.
+            </p>
+          </div>
+
+          <!-- Architecture Visual Diagram -->
+          <div class="architecture-diagram" aria-label="REDAESTH Platform Architecture Diagram">
+            <div class="diagram-title">Platform Monorepo &amp; Service Architecture</div>
+            <div class="diagram-flow">
+              <div class="flow-node">
+                <span class="node-num">01</span>
+                <strong>React Client</strong>
+                <span>Styled Components &bull; Framer &bull; Lenis</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node highlight">
+                <span class="node-num">02</span>
+                <strong>Node/Express API</strong>
+                <span>Versioned /api/v1 Endpoints</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">03</span>
+                <strong>Local C++ Engine</strong>
+                <span>C++17 Coaching Engine</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">04</span>
+                <strong>Persistent Context</strong>
+                <span>Local memory.json Context Store</span>
+              </div>
+              <div class="flow-connector">&rarr;</div>
+              <div class="flow-node">
+                <span class="node-num">05</span>
+                <strong>Cloud Deployment</strong>
+                <span>Vercel Serverless &bull; Auth &bull; CDN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-details-grid">
+            <div class="case-col">
+              <h4>Independent Technical Ownership</h4>
+              <p>
+                As founder and lead engineer, I architected the complete platform ecosystem &mdash; establishing codebase structure, backend routing, persistent context systems, client state management, and deployment pipelines.
+              </p>
+              
+              <h4>Modular Backend &amp; API Architecture</h4>
+              <ul class="detail-list">
+                <li><strong>Versioned REST API:</strong> Built structured `/api/v1` routes for authentication (signup/login), user profiles, chat, and community post/like/comment workflows.</li>
+                <li><strong>Serverless &amp; Container Delivery:</strong> Configured dual runtime support &mdash; standard Node server for local testing and Vercel serverless functions for zero-maintenance production deployment.</li>
+              </ul>
+            </div>
+
+            <div class="case-col">
+              <h4>Local AI Companion &amp; Systems Engineering</h4>
+              <ul class="detail-list">
+                <li><strong>Zero-Cloud-Cost Local Companion:</strong> Designed a local conversational coaching system updating persistent JSON context memory without paying recurring token fees to external APIs.</li>
+                <li><strong>C++ Coaching Integration:</strong> Built an optional standalone C++17 engine (<code>grind_engine.exe</code>) for deterministic local reasoning and sub-millisecond responses.</li>
+                <li><strong>Always-On Simulator:</strong> Background health checking and streak monitoring for user workout and hydration consistency.</li>
+              </ul>
+
+              <div class="case-tech-box">
+                <span class="tech-box-label">Core Technologies:</span>
+                <div class="tech-pill-row">
+                  <span class="tech-pill">Node.js</span>
+                  <span class="tech-pill">Express</span>
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">C++17</span>
+                  <span class="tech-pill">REST APIs</span>
+                  <span class="tech-pill">Vercel Serverless</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Engineered Capabilities Section -->
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-heading" data-reveal="up">
+          <p class="section-kicker">Technical Breadth</p>
+          <h2>Engineered Capabilities</h2>
+          <p class="section-lead">
+            A structured breakdown of my hands-on technical competencies across architecture, AI/ML, backend engineering, data, and infrastructure.
+          </p>
+        </div>
+
+        <div class="capabilities-grid">
+          <!-- Card 1 -->
+          <article class="capability-card" data-reveal="up">
+            <div class="capability-header">
+              <span class="capability-num">01</span>
+              <h3>Architecture &amp; Product Engineering</h3>
+            </div>
+            <ul class="capability-list">
+              <li>Requirements analysis &amp; technical scoping</li>
+              <li>System architecture &amp; interface contracts</li>
+              <li>Database schema &amp; data model design</li>
+              <li>REST API architecture &amp; versioning</li>
+              <li>Rapid MVP development &amp; prototyping</li>
+              <li>Pragmatic technical decision-making &amp; trade-offs</li>
+            </ul>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="capability-card" data-reveal="up">
+            <div class="capability-header">
+              <span class="capability-num">02</span>
+              <h3>AI &amp; Machine Learning</h3>
+            </div>
+            <ul class="capability-list">
+              <li>LLM application development &amp; prompt design</li>
+              <li>RAG architectures &amp; document chunking</li>
+              <li>Dense embeddings &amp; FAISS vector databases</li>
+              <li>Custom Transformer modeling (PyTorch, RoPE, SwiGLU)</li>
+              <li>Multi-agent orchestration &amp; HTN planning</li>
+              <li>AI security, prompt injection &amp; red teaming</li>
+            </ul>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="capability-card" data-reveal="up">
+            <div class="capability-header">
+              <span class="capability-num">03</span>
+              <h3>Application Engineering</h3>
+            </div>
+            <ul class="capability-list">
+              <li>React &amp; Next.js component architectures</li>
+              <li>JavaScript (ES6+) &amp; TypeScript fundamentals</li>
+              <li>Node.js &amp; Express server development</li>
+              <li>Python scripting &amp; machine learning control layers</li>
+              <li>RESTful API design &amp; integration</li>
+              <li>JWT authentication &amp; session security</li>
+            </ul>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="capability-card" data-reveal="up">
+            <div class="capability-header">
+              <span class="capability-num">04</span>
+              <h3>Real-Time &amp; Automation</h3>
+            </div>
+            <ul class="capability-list">
+              <li>WebSocket bidirectional audio/data streaming</li>
+              <li>Voice AI pipelines (VAD, STT, LLM, TTS)</li>
+              <li>Automated document extraction &amp; processing</li>
+              <li>Data scraping &amp; ETL workflows</li>
+              <li>Third-party API integrations &amp; webhooks</li>
+              <li>Parallelized async pipeline optimization</li>
+            </ul>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="capability-card" data-reveal="up">
+            <div class="capability-header">
+              <span class="capability-num">05</span>
+              <h3>Data &amp; Persistence</h3>
+            </div>
+            <ul class="capability-list">
+              <li>PostgreSQL relational database design</li>
+              <li>MongoDB document modeling</li>
+              <li>SQLite &amp; Android Room Database</li>
+              <li>FAISS native vector stores</li>
+              <li>Persistent context &amp; cache management</li>
+              <li>CRUD operations &amp; transaction management</li>
+            </ul>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="capability-card" data-reveal="up">
+            <div class="capability-header">
+              <span class="capability-num">06</span>
+              <h3>Infrastructure &amp; DevOps</h3>
+            </div>
+            <ul class="capability-list">
+              <li>Git version control &amp; GitHub workflows</li>
+              <li>Docker containerization basics</li>
+              <li>Linux / Bash command-line tooling</li>
+              <li>Vercel cloud &amp; serverless deployment</li>
+              <li>Environment configuration &amp; secrets management</li>
+              <li>CI/CD build and test automation</li>
+            </ul>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="capability-card capability-card-wide" data-reveal="up">
+            <div class="capability-header">
+              <span class="capability-num">07</span>
+              <h3>Security &amp; Reliability</h3>
+            </div>
+            <ul class="capability-list horizontal-list">
+              <li>Authentication &amp; role-based authorization</li>
+              <li>Input validation &amp; sanitization</li>
+              <li>API security &amp; rate limit strategies</li>
+              <li>LLM prompt injection defense research</li>
+              <li>Systematic debugging &amp; root cause analysis</li>
+              <li>Unit testing &amp; validation commands</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Showcase Section -->
+    <section class="section section-projects" id="projects">
+      <div class="container">
+        <div class="section-heading section-heading-split" data-reveal="up">
+          <div>
+            <p class="section-kicker">Verified Software</p>
+            <h2>Selected Engineering Projects</h2>
+            <p class="section-lead">
+              A showcase of built and deployed systems demonstrating full-stack, mobile, and async engineering.
+            </p>
+          </div>
+          <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer" class="section-link">
+            <span>Explore All Repositories on GitHub</span> &rarr;
+          </a>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 1: Voice AI Pipeline -->
+          <article class="project-card" data-reveal="up">
+            <div class="project-header">
+              <div class="project-meta-row">
+                <span class="project-index">01</span>
+                <span class="status-badge badge-implemented">Implemented &amp; Tested</span>
+              </div>
+              <h3>Real-Time Voice AI Pipeline</h3>
+            </div>
+            <p class="project-summary">
+              Low-latency bidirectional voice system connecting browser audio to backend via WebSockets with energy-based VAD, STT, streaming LLM, and TTS synthesis.
+            </p>
+            <div class="project-spec">
+              <strong>Engineering Highlights:</strong>
+              <p>Audio chunking at ~20ms, non-blocking parallelized pipeline stages, and modular architecture allowing seamless model substitution.</p>
+            </div>
+            <ul class="project-tags">
+              <li>WebSockets</li>
+              <li>Node.js</li>
+              <li>Audio Streaming</li>
+              <li>VAD</li>
+              <li>STT / TTS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer" class="button button-secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Therapist Website -->
+          <article class="project-card" data-reveal="up">
+            <div class="project-header">
+              <div class="project-meta-row">
+                <span class="project-index">02</span>
+                <span class="status-badge badge-production">Production Deployed</span>
+              </div>
+              <h3>Therapist Platform / Client Web Application</h3>
+            </div>
+            <p class="project-summary">
+              Production-level full-stack responsive web application engineered for a practicing therapist with custom layout systems, accessible UI, and sub-second load times.
+            </p>
+            <div class="project-spec">
+              <strong>Engineering Highlights:</strong>
+              <p>Custom typography scaling, micro-interactions, responsive mobile-first architecture, and automated cloud delivery on Vercel.</p>
+            </div>
+            <ul class="project-tags">
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>Vercel</li>
+              <li>Responsive UI</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://grow-my-therapy-clone-dtj7.vercel.app/" target="_blank" rel="noreferrer" class="button button-primary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Live Website</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: ExpenJar -->
+          <article class="project-card" data-reveal="up">
+            <div class="project-header">
+              <div class="project-meta-row">
+                <span class="project-index">03</span>
+                <span class="status-badge badge-implemented">Implemented</span>
+              </div>
+              <h3>ExpenJar — Offline-First Android Expense App</h3>
+            </div>
+            <p class="project-summary">
+              Native Android application in Java using SQLite via Room Database for persistent offline transaction tracking, spending analytics, and category breakdowns.
+            </p>
+            <div class="project-spec">
+              <strong>Engineering Highlights:</strong>
+              <p>MVVM architectural pattern, transactional ACID database handling, reactive UI state updates, and zero-network local storage reliability.</p>
+            </div>
+            <ul class="project-tags">
+              <li>Java</li>
+              <li>Android SDK</li>
+              <li>Room SQLite DB</li>
+              <li>MVVM</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Atharv06pawar/ExpenJar" target="_blank" rel="noreferrer" class="button button-secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Live Weather Dashboard -->
+          <article class="project-card" data-reveal="up">
+            <div class="project-header">
+              <div class="project-meta-row">
+                <span class="project-index">04</span>
+                <span class="status-badge badge-implemented">Implemented</span>
+              </div>
+              <h3>Live Weather &amp; Forecast Dashboard</h3>
+            </div>
+            <p class="project-summary">
+              Asynchronous API-integrated weather application featuring 5-day predictive forecasts, dynamic DOM manipulation, and defensive error state management.
+            </p>
+            <div class="project-spec">
+              <strong>Engineering Highlights:</strong>
+              <p>Non-blocking asynchronous fetching with async/await, debounced search queries, and real-time DOM element reconstruction.</p>
+            </div>
+            <ul class="project-tags">
+              <li>JavaScript</li>
+              <li>Async REST API</li>
+              <li>DOM APIs</li>
+              <li>Tailwind CSS</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://atharv06pawar.github.io/weather-dashboard/" target="_blank" rel="noreferrer" class="button button-primary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Live Site</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I Work (Engineering Workflow) Section -->
+    <section class="section section-workflow" id="workflow">
+      <div class="container">
+        <div class="section-heading" data-reveal="up">
+          <p class="section-kicker">Execution Framework</p>
+          <h2>How I Work</h2>
+          <p class="section-lead">
+            A repeatable 7-step engineering methodology that eliminates ambiguity, minimizes technical risk, and ships dependable software.
+          </p>
+        </div>
+
+        <div class="workflow-steps" data-reveal="up">
+          <div class="workflow-step">
+            <span class="step-number">01</span>
+            <div class="step-content">
+              <h3>Understand</h3>
+              <p>Deconstruct requirements, operational constraints, user intent, and the exact root problem before writing code.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="step-number">02</span>
+            <div class="step-content">
+              <h3>Architect</h3>
+              <p>Design data flow, interface schemas, database models, and choose the simplest appropriate technology stack.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="step-number">03</span>
+            <div class="step-content">
+              <h3>Build</h3>
+              <p>Implement core functionality with modular components, clear typing, and defensible error boundaries.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="step-number">04</span>
+            <div class="step-content">
+              <h3>Integrate</h3>
+              <p>Connect REST APIs, persistent databases, AI models, vector stores, and external third-party services seamlessly.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="step-number">05</span>
+            <div class="step-content">
+              <h3>Test</h3>
+              <p>Systematically debug edge cases, benchmark latency, validate inputs, and ensure cross-platform stability.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="step-number">06</span>
+            <div class="step-content">
+              <h3>Deploy</h3>
+              <p>Package the solution into containers or serverless runtimes with reproducible build scripts and clean environment variables.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="step-number">07</span>
+            <div class="step-content">
+              <h3>Iterate</h3>
+              <p>Measure real-world performance, profile bottlenecks, gather feedback, and continuously refine the product.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading" data-reveal="up">
+          <p class="section-kicker">Background</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="info-card" data-reveal="up">
+            <p class="card-label">Who I Am</p>
+            <p>
+              I am a <strong>Computer Science Engineering</strong> undergraduate at Government College of Engineering, Chandrapur, and the founder of <strong>REDAESTH Pvt. Ltd.</strong>
+            </p>
+            <p>
+              I operate as an end-to-end builder &mdash; comfortable working across machine learning pipelines, backend services, database schemas, real-time audio streams, and frontend user interfaces.
+            </p>
+          </article>
+
+          <article class="info-card" data-reveal="up">
+            <p class="card-label">Engineering Focus</p>
+            <p>
+              I specialize in taking ambiguous, messy technical challenges and engineering clean, grounded solutions that actually work.
+            </p>
+            <p>
+              Whether it's building a scientific RAG pipeline with custom vector indexing, orchestrating multi-agent AI security simulations, or architecting a production monorepo, I take end-to-end technical responsibility.
+            </p>
+          </article>
+
+          <article class="info-card strengths-card" data-reveal="up">
+            <p class="card-label">Core Strengths</p>
+            <ul class="strength-list">
+              <li><strong>End-to-End Ownership:</strong> From system design to deployment</li>
+              <li><strong>AI &amp; Systems Focus:</strong> RAG, PyTorch, C++, and WebSockets</li>
+              <li><strong>Founder Mindset:</strong> High autonomy, pragmatism, and execution speed</li>
+              <li><strong>Remote Work Ready:</strong> Structured communication and clean documentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-shell" data-reveal="up">
+          <div class="section-heading">
+            <p class="section-kicker">Let's Connect</p>
+            <h2>Get in Touch</h2>
+            <p class="section-copy">
+              Open to Software &amp; AI Engineering roles, technical collaborations, and startup projects. Let's discuss what we can build together.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Email -->
+            <a href="mailto:pawaratharv06@gmail.com" class="contact-card email">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-title">Email</span>
+                <span class="contact-sub">pawaratharv06@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer" class="contact-card github">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-title">GitHub</span>
+                <span class="contact-sub">github.com/Atharv06pawar</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/-atharvpawar" target="_blank" rel="noreferrer" class="contact-card linkedin">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-title">LinkedIn</span>
+                <span class="contact-sub">linkedin.com/in/-atharvpawar</span>
+              </div>
+            </a>
+
+            <!-- X / Twitter -->
+            <a href="https://x.com/Atharv__Pawar__" target="_blank" rel="noreferrer" class="contact-card twitter">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-title">X (Twitter)</span>
+                <span class="contact-sub">@Atharv__Pawar__</span>
+              </div>
+            </a>
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/E9UsSExKDg/" target="_blank" rel="noreferrer" class="contact-card leetcode">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.732L9.705 7.64l4.739-4.738a1.38 1.38 0 0 0-.961-2.902zM15.348 9.5a1.38 1.38 0 0 0-.976.405l-4.5 4.5a1.379 1.379 0 0 0 1.95 1.95l4.5-4.5a1.38 1.38 0 0 0-.974-2.355z"/></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-title">LeetCode</span>
+                <span class="contact-sub">Problem Solving Profile</span>
+              </div>
+            </a>
+
+            <!-- Resume Download -->
+            <a href="assets/ATHARV-PAWAR-Resume.pdf" download="ATHARV-PAWAR-Resume.pdf" class="contact-card resume" target="_blank" rel="noopener">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-title">Official Resume</span>
+                <span class="contact-sub">Download PDF (ATS Format)</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p class="footer-copy">
+        &copy; 2026 Atharv Pawar &bull; Software &amp; AI Engineer
+      </p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top &uarr;</a>
+        <a href="https://github.com/Atharv06pawar" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/-atharvpawar" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="assets/ATHARV-PAWAR-Resume.pdf" download="ATHARV-PAWAR-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Atharv Pawar | Built with basic HTML, CSS &amp; JS</p>
-  </div>
-</footer>
-
-<script src="js/script.js"></script>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>
