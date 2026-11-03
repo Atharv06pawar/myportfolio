@@ -22,6 +22,7 @@
   <meta name="twitter:image" content="https://atharvpawar.work.gd/assets/profile.png">
   
   <meta name="theme-color" content="#090e14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23090e14'/%3E%3Cpath d='M8 9h16v4H8zm0 7h11v4H8zm0 7h16v2H8z' fill='%2338bdf8'/%3E%3C/svg%3E">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,6 +71,38 @@
 </head>
 <body>
 
+  <noscript><style>.live-build-layer { display: none !important; }</style></noscript>
+
+  <!-- Live construction layer: cursors operate on the real page underneath. -->
+  <div class="live-build-layer" id="liveBuildLayer">
+    <div class="build-agent-canvas" id="buildAgentCanvas" aria-hidden="true"></div>
+    <div class="build-frame-canvas" id="buildFrameCanvas" aria-hidden="true"></div>
+    <div class="cursor-buffer" id="cursorBuffer" aria-hidden="true">
+      <div class="buffer-heading"><span class="buffer-led"></span> CURSOR_BUFFER</div>
+      <div class="buffer-code"><span>agents:</span><strong>05 / 05</strong><span>status:</span><strong>armed</strong></div>
+      <div class="buffer-track"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="build-hud" id="buildHud">
+      <span class="build-hud-dot" aria-hidden="true"></span>
+      <p id="buildStatus" role="status">Agents are laying out the page…</p>
+      <button class="build-skip" id="skipBuild" type="button">Skip build <span aria-hidden="true">↗</span></button>
+    </div>
+    <div class="cursor-assistant" id="cursorAssistant" aria-live="polite" hidden>
+      <button class="assistant-toggle" id="assistantToggle" type="button" aria-expanded="false" aria-controls="assistantPanel">
+        <span class="assistant-cursor-mark" aria-hidden="true">↖</span>
+        <span class="assistant-presence" aria-hidden="true"></span>
+        <span class="assistant-toggle-copy"><strong>Cursor assistant</strong><small>page assembled</small></span>
+      </button>
+      <div class="assistant-panel" id="assistantPanel" hidden>
+        <span class="assistant-panel-kicker">LIVE COMPANION</span>
+        <p>All interface surfaces are ready. I’ll stay nearby while you explore.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-meter" aria-hidden="true"><span id="scrollMeterFill"></span></div>
+  <div class="scroll-chapter" id="scrollChapter" aria-hidden="true"><span id="chapterNumber">01</span><i></i><span id="chapterLabel">HOME</span></div>
+
   <!-- Site Header & Sticky Navigation -->
   <header class="site-header" id="top">
     <div class="container">
@@ -104,7 +137,7 @@
     </div>
   </header>
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
     
     <!-- Hero Section -->
     <section id="hero" class="section hero">
