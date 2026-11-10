@@ -71,32 +71,39 @@
 </head>
 <body>
 
-  <noscript><style>.live-build-layer { display: none !important; }</style></noscript>
+  <noscript><style>.build-target { opacity: 1 !important; transform: none !important; } .live-build-layer { display: none !important; }</style></noscript>
 
-  <!-- Live construction layer: cursors operate on the real page underneath. -->
-  <div class="live-build-layer" id="liveBuildLayer">
-    <div class="build-agent-canvas" id="buildAgentCanvas" aria-hidden="true"></div>
-    <div class="build-frame-canvas" id="buildFrameCanvas" aria-hidden="true"></div>
-    <div class="cursor-buffer" id="cursorBuffer" aria-hidden="true">
+  <!-- Autonomous Multi-Agent Swarm Construction Layer -->
+  <div class="live-build-layer" id="liveBuildLayer" aria-hidden="true">
+    <!-- GPU Canvas for dynamic supporting guide lines, laser calipers, & cursor trails -->
+    <canvas class="build-guide-canvas" id="buildGuideCanvas"></canvas>
+    
+    <!-- DOM Cursor Agents Container -->
+    <div class="build-agent-canvas" id="buildAgentCanvas"></div>
+
+    <!-- Central Loading Buffer (revolving orbital ring) -->
+    <div class="cursor-buffer" id="cursorBuffer">
+      <div class="buffer-ring">
+        <span class="buffer-core"></span>
+        <div class="buffer-radar"></div>
+      </div>
       <div class="buffer-heading"><span class="buffer-led"></span> CURSOR_BUFFER</div>
       <div class="buffer-code"><span>agents:</span><strong>05 / 05</strong><span>status:</span><strong>armed</strong></div>
       <div class="buffer-track"><i></i><i></i><i></i><i></i><i></i></div>
     </div>
-    <div class="build-hud" id="buildHud">
+
+    <!-- HUD Status Indicator & Controls -->
+    <div class="build-hud" id="buildHud" role="status" aria-live="polite">
       <span class="build-hud-dot" aria-hidden="true"></span>
-      <p id="buildStatus" role="status">Agents are laying out the page…</p>
-      <button class="build-skip" id="skipBuild" type="button">Skip build <span aria-hidden="true">↗</span></button>
-    </div>
-    <div class="cursor-assistant" id="cursorAssistant" aria-live="polite" hidden>
-      <button class="assistant-toggle" id="assistantToggle" type="button" aria-expanded="false" aria-controls="assistantPanel">
-        <span class="assistant-cursor-mark" aria-hidden="true">↖</span>
-        <span class="assistant-presence" aria-hidden="true"></span>
-        <span class="assistant-toggle-copy"><strong>Cursor assistant</strong><small>page assembled</small></span>
+      <p id="buildStatus">Agents armed. Initializing live page construction…</p>
+      <button class="build-skip" id="skipBuild" type="button" title="Skip animation and display full page immediately">
+        Skip build <span aria-hidden="true">↗</span>
       </button>
-      <div class="assistant-panel" id="assistantPanel" hidden>
-        <span class="assistant-panel-kicker">LIVE COMPANION</span>
-        <p>All interface surfaces are ready. I’ll stay nearby while you explore.</p>
-      </div>
+    </div>
+
+    <!-- Minimized Revolving Dock in Bottom Right -->
+    <div class="cursor-dock" id="cursorDock" title="Replay autonomous build" aria-label="Replay build">
+      <div class="dock-orbit-ring"></div>
     </div>
   </div>
 
@@ -142,7 +149,7 @@
     <!-- Hero Section -->
     <section id="hero" class="section hero">
       <div class="container hero-grid">
-        <div class="hero-copy" data-reveal="up">
+        <div class="hero-copy">
           <div class="status-indicator">
             <span class="status-dot"></span>
             <span class="status-text">Available for Engineering &amp; Product Roles</span>
@@ -197,7 +204,7 @@
           </div>
         </div>
 
-        <div class="hero-visual" data-reveal="scale">
+        <div class="hero-visual">
           <div class="profile-card">
             <div class="profile-glow"></div>
             
